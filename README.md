@@ -25,7 +25,7 @@ Dockerand docker-compose
 ## How to set up
 
 ```
-$ cd dockker-lamp-php5.6
+$ cd docker-lamp-php5.6
 $ docker-compose build
 $ docker-compose up
 ```
