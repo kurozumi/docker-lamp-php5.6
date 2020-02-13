@@ -5,7 +5,7 @@ MAINTAINER docker-web
 
 RUN apt-get update \
     && apt-get -y install vim wget lsb-release libicu-dev mysql-client \
-    && docker-php-ext-install pdo_mysql mysqli intl mysql
+    && docker-php-ext-install pdo_mysql mysql intl pdo_mysql mbstring
 # mod_rewriteを 有効に
 RUN a2enmod rewrite
 
@@ -26,6 +26,8 @@ COPY ./base.conf /etc/apache2/sites-available/base.conf
 RUN a2ensite base.conf
 
 COPY ./php.ini /usr/local/etc/php/
+
+RUN pear install MDB2_Driver_mysql
 
 # ポートの解放
 EXPOSE 80

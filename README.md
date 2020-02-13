@@ -12,6 +12,7 @@ Dockerand docker-compose
 - php5.6.28
 	- ✅ baserCMS 3.0.16
 	- ✅ Wordpress 4.9.8 
+	- ✅ EC-CUBE 2.13.5
 - php7.1
 	- ✅ baserCMS 4.1.3
 	- ✅ Wordpress 4.9.8

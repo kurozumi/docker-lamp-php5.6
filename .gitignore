@@ -1,0 +1,7 @@
+.idea
+/docker/db/mysql_data
+/docker/logs
+/public_html/*
+!/public_html/.htaccess
+!/public_html/index.php
+!/public_html/phpinfo.php
