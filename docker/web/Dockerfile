@@ -5,7 +5,7 @@ MAINTAINER docker-web
 
 RUN apt-get update \
     && apt-get -y install vim wget lsb-release libicu-dev mysql-client \
-    && docker-php-ext-install pdo_mysql mysqli intl
+    && docker-php-ext-install pdo_mysql mysqli intl mysql
 # mod_rewriteを 有効に
 RUN a2enmod rewrite
 
